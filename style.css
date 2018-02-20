@@ -1,0 +1,153 @@
+body {
+    background-color: burlywood;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-shadow: 4px 4px #aaa;
+    /*font-family: 'Roboto', Arial, sans-serif;*/
+}
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+    text-shadow: #fff;
+    border-bottom-width: 7px;
+    border-bottom-color: coral;
+    border-bottom-style: solid;
+    border-image-width: 5px;
+    padding: 10px 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: inset 10px 15px 15px -10px #222;
+}
+
+#brand {
+    font-size: 29px;
+    text-decoration: none;
+    color: #8c1515;
+}
+
+#brand:hover {
+    color: green;
+}
+
+#brand:active {
+    color: #fff;
+}
+
+#nav-container {
+    border-right: 1px solid #ddd;
+    float: left;
+    width: 145px;
+    padding: 45px 15px 15px 30px;
+    overflow: auto;
+}
+
+#nav-title {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 3px 3px #aaa;
+}
+
+ul.nav {
+    padding: 0;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 3px 3px #aaa;
+}
+
+
+/* @TODO Style this later */
+
+ul.nav li {}
+
+ul.nav li a {
+    display: block;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 0;
+    text-shadow: 3px 3px #aaa;
+}
+
+ul.nav li a:hover {
+    color: #fff;
+}
+
+#body {
+    float: left;
+    width: calc(100% - 250px);
+    padding: 15px;
+    overflow: auto;
+    font-size: 22px;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: antiquewhite;
+    border: 5px solid salmon;
+    /*border: lightcoral;*/
+    padding: 10px;
+    font-size: 30px;
+    /*font-family: 'Shrikhand', cursive;*/
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 3px 3px #aaa;
+    box-shadow: 5px 7px #222
+}
+
+blockquote::after {
+    content: '"- Kalob Taulien';
+}
+
+blockquote::before {
+    content: '"';
+}
+
+footer {
+    font-size: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
+    clear: both;
+    background-color: chocolate;
+    color: antiquewhite;
+    margin-top: 1px;
+    float: left;
+    width: 100%;
+    opacity: .7;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    box-shadow: inset 10px 15px 15px -10px #222;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.full-col,
+.col1,
+.col2,
+.col3 {
+    display: inline-block;
+    width: calc(31% - 60px);
+    padding: 0 30px;
+    text-align: center;
+}
+
+.full-col {
+    width: calc(100% - 60px);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.full-col:not(.This) {
+    display: none;
+}
